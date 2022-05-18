@@ -1,0 +1,226 @@
+#section-welcome {
+  overflow: hidden;
+  padding: 20px 0;
+  @include tablet {
+    padding: 28px 0;
+  }
+  @include desktop {
+    padding: 40px 0;
+    padding-bottom: 350px !important;
+  }
+
+  padding-bottom: 150px;
+  @include desktop {
+  }
+  .wrapper-image {
+    height: 360px;
+    width: auto;
+    max-width: 400px;
+    @include mobile {
+      height: 360px;
+      width: 400px;
+      margin: 0 auto;
+    }
+    @include tablet {
+      max-width: none;
+      height: 500px;
+    }
+    @include desktop {
+      height: 620px;
+      width: auto;
+    }
+    .img-1 {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 165px;
+      height: 165px;
+      border-radius: 30px;
+      overflow: hidden;
+      @include tablet {
+        width: 250px;
+        height: 250px;
+      }
+      @include desktop {
+        width: 300px;
+        height: 300px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .img-2 {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 275px;
+      height: 275px;
+      border-radius: 30px;
+      overflow: hidden;
+      @include tablet {
+        width: 80%;
+        height: 370px;
+      }
+      @include desktop {
+        width: 470px;
+        height: 470px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .wrapper-title-banner {
+    padding-left: 0px;
+
+    @include tablet {
+      padding-left: 35px;
+      padding: 0;
+    }
+    @include desktop {
+      padding-left: 50px;
+    }
+    z-index: 5;
+    .section-title {
+      h1 {
+        color: $color-red-400;
+      }
+      .divider {
+        background: $color-red-400;
+      }
+      p {
+        color: $black;
+      }
+      .sub-title {
+        color: $color-brown-200;
+        font-size: 24px;
+        padding-bottom: 120px;
+        @include tablet {
+          padding-bottom: 100px;
+        }
+        @include desktop {
+          font-size: 36px;
+          padding-bottom: 0px;
+          padding-top: 50px;
+        }
+        font-style: italic;
+        font-weight: bold;
+        line-height: 120% !important;
+        padding-top: 0px;
+      }
+    }
+  }
+  .section-welcome-2 {
+    .wrapper-image {
+      margin-top: 0;
+      display: none;
+      @include desktop {
+        display: block;
+      }
+      @include large-desktop {
+        margin-top: -100px;
+      }
+    }
+    .wrapper-image {
+      height: 520px;
+      @include desktop {
+        height: 620px;
+      }
+      .img-1 {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .img-2 {
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        width: 100%;
+        height: 370px;
+        border-radius: 30px;
+        overflow: hidden;
+        @include desktop {
+          width: 470px;
+          height: 470px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .custom-shape-divider-bottom-1652169260 {
+    position: absolute;
+    z-index: 2;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652169260 svg {
+    position: relative;
+    display: block;
+    width: calc(100%);
+    height: 50px;
+    @include tablet {
+      height: 70px;
+    }
+    @include desktop {
+      height: 150px;
+    }
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652169260 .shape-fill {
+    fill: #fed8a8;
+  }
+  .background-img {
+    z-index: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: auto;
+    z-index: -1;
+    @include mobile {
+      display: block;
+      height: 400px;
+    }
+    @include tablet {
+      height: 500px;
+    }
+    @include large-desktop {
+      height: auto;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// @import "animate.css";
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "fonts";
+@import "icomoon";
+@import "keyframe";
+
+@import "custom";
+@import "button";
+@import "type";
+@import "main";
+
+@import "header";
+@import "footer";
+// home
+@import "./home/main-banner";
+@import "./home/ss-welcome";
+@import "./home/ss-service";
+@import "./home/ss-value";
+@import "./home/ss-testimonial";
+@import "./home/ss-blogs";
+
+//about
+@import "./about/ss-banner";
+@import "./about/ss-vision";
+@import "./about/ss-futures";
+
+//services
+@import "./services/ss-banner";
+@import "./services/ss-mkt";
+@import "./services/ss-digital";
+@import "./services/ss-reative";
+@import "./services/ss-flow";
+@import "./news/ss-banner";
+@import "./news/ss-news-hot";
+@import "./news/ss-news-1";
+
+//recruit
+@import "./recruit/ss-1";
+@import "./recruit/ss-recruit-2";
+@import "./recruit/ss-recruit-3";
+
+//contacts
+@import "./contact/ss-contact-banner";
+@import "./contact/ss-contact-1";
+@import "./contact/ss-map";

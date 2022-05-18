@@ -1,0 +1,92 @@
+#section-futures {
+  padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 70px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+  }
+  background: $color-red-200;
+  position: relative;
+  .img-animation {
+    position: absolute;
+    top: auto;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+    display: none;
+    @include tablet {
+      display: block;
+      left: 25%;
+    }
+    @include desktop {
+      display: block;
+      left: 30%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .wrapper-value {
+    margin-top: 50px;
+    @include tablet {
+      margin-top: 70px;
+    }
+    @include desktop {
+      margin-top: 100px;
+    }
+    .value-block {
+      background: $white;
+      border-radius: 100%;
+      width: 150px;
+      height: 150px;
+      color: $color-brown-300;
+      @include transition;
+      @include tablet {
+        width: 180px;
+        height: 180px;
+      }
+      border: 4px solid $color-red-400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .card-futures {
+    padding: 15px;
+    background: $white;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    max-width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .wrapper-title-banner {
+    .section-title {
+      h1 {
+        color: $color-red-400;
+      }
+      .divider {
+        background: $color-red-400;
+      }
+    }
+  }
+  .wrapper-card-futures {
+    position: relative;
+    margin-bottom: 20px;
+    @include desktop {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+.footer .custom-shape-divider-top-1652196438 .shape-fill {
+  fill: $color-red-200;
+}

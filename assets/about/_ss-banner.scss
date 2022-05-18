@@ -1,0 +1,38 @@
+#section-banner-vision {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding-top: 180px;
+  .bg-img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .banner-title {
+    position: relative;
+    z-index: 9;
+    padding-left: 20px;
+  }
+  .media-title {
+    margin: 0;
+    @include desktop {
+      margin: 0 auto;
+    }
+    max-width: 115px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+  }
+}

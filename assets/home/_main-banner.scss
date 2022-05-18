@@ -1,0 +1,41 @@
+section#main-banner {
+  position: relative;
+  min-height: 800px;
+  background: $color-gradient-1;
+  height: 100vh;
+
+  .custom-shape-divider-bottom-1652161885 {
+    display: none;
+    @include desktop {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+  }
+
+  .custom-shape-divider-bottom-1652161885 svg {
+    position: relative;
+    display: block;
+    width: calc(100%);
+    height: 189px;
+  }
+
+  .custom-shape-divider-bottom-1652161885 .shape-fill {
+    fill: #ffffff;
+  }
+
+  .wrapper-title-banner {
+    top: 50px;
+    position: relative;
+    @include large-desktop {
+      max-width: 40%;
+      position: absolute;
+      top: 200px;
+      left: 0px;
+    }
+  }
+}

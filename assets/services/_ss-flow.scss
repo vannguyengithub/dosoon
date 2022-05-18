@@ -1,0 +1,128 @@
+#section-service-flow {
+  background: $color-gray-100;
+  padding-top: 50px;
+  @include tablet {
+    padding-top: 70px;
+  }
+  @include desktop {
+    padding-top: 100px;
+  }
+
+  padding-bottom: 50px;
+  position: relative;
+  @include desktop {
+    padding-top: 150px;
+  }
+
+  .custom-shape-divider-top-1652425003 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1652425003 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+    @include tablet {
+      height: 100px;
+    }
+    @include desktop {
+      height: 150px;
+    }
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1652425003 .shape-fill {
+    fill: #ffffff;
+  }
+  .wrapper-cards-flow {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+    .card-flow {
+      position: relative;
+      min-height: 430px;
+      margin-bottom: 20px;
+
+      .bg-card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .card-step {
+        position: relative;
+        span {
+          color: $color-brown-300;
+          font-size: 30px !important;
+          line-height: 100% !important;
+          position: absolute;
+          top: 5px;
+          left: 49%;
+          transform: translateX(-50%);
+          text-align: center;
+          .h1 {
+            line-height: 110% !important;
+          }
+        }
+      }
+      .card-info {
+        position: absolute;
+        width: 65%;
+        left: 48%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .info-title {
+          margin: 0 auto;
+          color: $color-red-500;
+          font-weight: bold;
+          margin-bottom: 20px;
+          @include large-desktop {
+            width: 70%;
+          }
+          .title {
+            font-weight: bold;
+          }
+          .line {
+            margin: 5px auto;
+            width: 130px;
+            height: 2px;
+            background: $color-red-500;
+          }
+        }
+        .info-description {
+          @include limit-row(4);
+        }
+      }
+    }
+  }
+  .row-2 {
+    .col-md-0 {
+      display: none;
+      @include large-desktop {
+        display: block;
+      }
+    }
+  }
+  .wrapper-cards-flow.mobile {
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

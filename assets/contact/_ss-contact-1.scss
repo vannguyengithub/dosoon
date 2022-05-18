@@ -1,0 +1,116 @@
+#page-contact {
+  #section-contact {
+    padding: 25px 0;
+    @include tablet {
+      padding: 36px 0px;
+    }
+    @include desktop {
+      padding: 50px 0px;
+    }
+
+    .wrapper-items-contact {
+      margin-top: 25px;
+      @include tablet {
+        margin-top: 36px;
+      }
+      @include desktop {
+        margin-top: 50px;
+      }
+      .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .item-icon {
+          border-radius: 100%;
+          overflow: hidden;
+          width: 100px;
+          height: 100px;
+          background-color: $color-red-500;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .icon {
+            i {
+              font-size: 50px;
+              color: $white;
+            }
+          }
+        }
+        .line {
+          height: 1px;
+          width: 150px;
+          background-color: $color-red-500;
+        }
+        .item-name {
+          margin-bottom: 10px;
+          span {
+            color: $color-gray-500;
+          }
+        }
+        .item-description {
+          text-align: center;
+        }
+      }
+    }
+    .wrapper-form-contact {
+      margin-top: 45px;
+      @include tablet {
+        margin-top: 56px;
+      }
+      @include desktop {
+        margin-top: 70px;
+      }
+      .form-sub-title {
+        max-width: 100%;
+        @include tablet {
+          max-width: 80%;
+        }
+        @include desktop {
+          max-width: 50%;
+        }
+        margin: 0 auto;
+        text-align: center;
+
+        span {
+          color: $color-gray-500;
+        }
+      }
+      .form-contact {
+        margin-top: 45px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include tablet {
+          margin-top: 56px;
+          max-width: 80%;
+        }
+        @include desktop {
+          max-width: 50%;
+          margin-top: 70px;
+        }
+        .form-control {
+          padding: 15px 20px;
+          background-color: $color-red-300;
+          color: $color-gray-500;
+          border-radius: 20px;
+          border: 1px solid transparent;
+          @include transition;
+          &:focus {
+            background-color: transparent !important;
+            border: 1px solid $color-red-400 !important;
+            box-shadow: none;
+          }
+        }
+        textarea {
+          background-color: transparent !important;
+          border: 1px solid $color-red-400 !important;
+        }
+        .btn__form {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

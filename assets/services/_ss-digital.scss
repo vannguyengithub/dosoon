@@ -1,0 +1,142 @@
+#section-digital {
+  position: relative;
+  background: $color-red-200;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  @include tablet {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .custom-shape-divider-top-1652350317 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1652350317 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+    @include tablet {
+      height: 75px;
+    }
+    @include desktop {
+      height: 150px;
+    }
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1652350317 .shape-fill {
+    fill: #ffffff;
+  }
+  .wrapper-service {
+    margin-top: 20px;
+
+    @include tablet {
+      margin-top: 35px;
+    }
+    @include desktop {
+      margin-top: 40px;
+    }
+  }
+  .service-item {
+    box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 15px 20px 15px;
+    background-color: $white;
+    border-radius: 20px;
+    display: flex;
+    background: $white;
+    flex-direction: column;
+    // height: 100%;
+    @include transition;
+    max-width: 100%;
+    margin: 15px 0;
+    @include large-desktop {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &:hover {
+      background: $color-red-300;
+      .service-icon {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .service-item {
+      max-width: 80%;
+    }
+    .service-icon {
+      margin: 0 auto;
+      max-width: 105px;
+      max-height: 105px;
+      border-radius: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition;
+      }
+    }
+    .line {
+      max-width: 50%;
+      width: 50%;
+      height: 2px;
+      background: $color-red-500;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .service-title {
+      h2 {
+        font-weight: bold;
+        text-align: center;
+        @include limit-row(3);
+        min-height: 60px;
+      }
+    }
+    .service-description {
+      text-align: center;
+      @include limit-row(3);
+    }
+  }
+  .custom-shape-divider-bottom-1652411159 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652411159 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    height: 50px;
+    @include tablet {
+      height: 75px;
+    }
+    @include desktop {
+      height: 150px;
+    }
+  }
+
+  .custom-shape-divider-bottom-1652411159 .shape-fill {
+    fill: #ffffff;
+  }
+}

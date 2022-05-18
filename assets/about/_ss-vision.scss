@@ -1,0 +1,117 @@
+#section-vision {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  @include tablet {
+    padding-bottom: 150px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+  }
+  .row:nth-child(2) {
+    flex-direction: column-reverse;
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+  .chart-arow {
+    display: none;
+    @include desktop {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 90%;
+      height: 90%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      // object-fit: scale-down;
+    }
+  }
+  .wrapper-vision {
+    max-width: 100%;
+    @include desktop {
+      max-width: 80%;
+    }
+  }
+  .img-animation-wrapper {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+    .chart-img {
+      @include desktop {
+        position: absolute;
+        top: -90px;
+        right: 0;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .text-vision {
+    p {
+      color: $color-red-300;
+      letter-spacing: 5px;
+    }
+    span {
+      border-radius: 5px;
+      color: $white;
+      display: inline-block;
+      padding: 5px;
+      background-color: $color-red-300;
+    }
+  }
+  .wrapper-title-banner {
+    .section-title {
+      color: $color-red-400;
+      margin-bottom: 20px;
+    }
+    .divider {
+      background: $color-red-400;
+    }
+  }
+  .custom-shape-divider-bottom-1652259014 {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652259014 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 125px;
+    @include tablet {
+      height: 150px;
+    }
+    @include desktop {
+      height: 225px;
+    }
+
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652259014 .shape-fill {
+    fill: #fed8a8;
+  }
+}

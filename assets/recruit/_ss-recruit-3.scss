@@ -1,0 +1,68 @@
+#section-table-recruit {
+  padding: 30px 0px;
+  @include tablet {
+    padding: 42px 0;
+  }
+  @include desktop {
+    padding: 60px 0;
+  }
+  .wrapper-table {
+    overflow-x: scroll;
+    table {
+      text-align: center;
+      min-width: 800px;
+      //   table title code here
+      thead,
+      tbody {
+        position: relative;
+      }
+      .title-job,
+      .name-job {
+        position: sticky;
+        left: -25px;
+        background: $white;
+        z-index: 1;
+      }
+      thead th {
+        vertical-align: middle;
+        border-bottom: 1px solid $color-red-400;
+        border-top: none;
+        padding: 15px;
+        border-left: 1px solid $color-red-400;
+        color: $color-red-400;
+        text-transform: uppercase;
+        &:first-child {
+          border-left: 1px solid transparent;
+        }
+
+        @include tablet {
+          padding: 21px;
+        }
+        @include desktop {
+          padding: 30px;
+        }
+      }
+      // main body table
+      tbody {
+        //   custom table td
+        tr {
+          .stt {
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+        tr td {
+          vertical-align: middle;
+          border-bottom: 1px solid transparent;
+          border-top: 1px solid transparent;
+          padding: 15px;
+          border-left: 1px solid $color-red-400;
+          color: $color-gray-500;
+          &:first-child {
+            border-left: 1px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}

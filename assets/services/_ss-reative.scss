@@ -1,0 +1,149 @@
+#section-reative {
+  padding: 20px 0px;
+  @include desktop {
+    padding: 40px 0px;
+  }
+  position: relative;
+  .wrapper-reative {
+    position: relative;
+    height: auto;
+
+    @include large-desktop {
+      height: 250px;
+    }
+    width: 100%;
+    .wapper-reative-content {
+      margin-top: 20px;
+    }
+    .icon-reative {
+      display: none;
+      @include large-desktop {
+        display: block;
+      }
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+      .icon-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $color-red-400;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: transparent;
+          border: 2px solid $color-red-500;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          border-radius: 100%;
+          transform: translateY(10%);
+        }
+      }
+      .line {
+        background-color: $color-red-500;
+        position: absolute;
+      }
+      .line.line-1 {
+        width: 110px;
+        height: 2px;
+        top: 65px;
+        right: 160px;
+      }
+      .line.line-2 {
+        width: 2px;
+        height: 100px;
+        top: 160px;
+        right: 65px;
+      }
+    }
+    .reative-row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      @include desktop {
+        flex-direction: row;
+      }
+      @include large-desktop {
+        width: 75%;
+        flex-direction: row;
+      }
+      .reative-img {
+        max-height: 300px;
+
+        @include desktop {
+          max-width: 370px;
+          max-height: 250px;
+        }
+        border-radius: 30px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .reative-content {
+        .content-title {
+          padding: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          background: $color-red-500;
+          font-weight: bold;
+          color: $white;
+        }
+        .content-description {
+          padding-top: 16px;
+          padding-left: 16px;
+
+          @include tablet {
+            padding-top: 20px;
+            padding-left: 20px;
+          }
+          p {
+            line-height: 150%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .wrapper-reative.bottom {
+    margin-top: 30px;
+    @include desktop {
+      margin-top: 140px;
+    }
+    .reative-row {
+      @include large-desktop {
+        float: right;
+      }
+    }
+    .icon-reative {
+      bottom: 0;
+      left: 0;
+    }
+    .icon-img {
+      left: 0;
+      bottom: 0;
+    }
+    .line.line-1 {
+      left: 160px;
+    }
+    .line.line-2 {
+      top: -125px;
+      left: 65px;
+    }
+  }
+}

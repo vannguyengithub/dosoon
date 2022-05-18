@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 110.98 113.04" style="enable-background:new 0 0 110.98 113.04;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#86391D;stroke-width:2.1364;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:2.1364;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#E9F2FA;stroke:#86391D;stroke-width:2.1364;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M70.18,45.46c0-9.01-7.13-16.31-15.93-16.31c-8.8,0-15.93,7.3-15.93,16.31c0,5.57,2.73,10.48,6.88,13.42
+			c0.64,0.46,1.09,1.18,1.09,1.98v5.41c0,2.4,1.9,2.2,4.24,2.2h7.42c2.34,0,4.24,0.2,4.24-2.2v-5.41c0-0.8,0.44-1.52,1.09-1.98
+			C67.46,55.94,70.18,51.03,70.18,45.46z"/>
+		<path class="st1" d="M56.99,63.39"/>
+		<path class="st1" d="M51.26,63.39"/>
+		<path class="st0" d="M58.65,72.13c0,2.61-2.06,4.72-4.61,4.72c-2.54,0-4.61-2.11-4.61-4.72c0-2.61,2.07-2.58,4.61-2.58
+			C56.58,69.56,58.65,69.53,58.65,72.13z"/>
+		<path class="st0" d="M46.29,62.66v5.05c0,1.7,1.36,3.09,3.03,3.09h9.86c1.68,0,3.03-1.38,3.03-3.09v-5.05H46.29z"/>
+		<g>
+			<line class="st2" x1="22.92" y1="45.08" x2="30.4" y2="45.08"/>
+			<line class="st2" x1="77.99" y1="45.08" x2="85.46" y2="45.08"/>
+		</g>
+		<g>
+			<line class="st2" x1="32.08" y1="67.19" x2="37.37" y2="61.91"/>
+			<line class="st2" x1="71.02" y1="28.26" x2="76.3" y2="22.97"/>
+		</g>
+		<line class="st2" x1="54.19" y1="21.29" x2="54.19" y2="13.81"/>
+		<g>
+			<line class="st2" x1="76.3" y1="67.19" x2="71.02" y2="61.91"/>
+			<line class="st2" x1="37.37" y1="28.25" x2="32.08" y2="22.97"/>
+		</g>
+	</g>
+	<g>
+		<path class="st0" d="M80.72,92.27H30.28c-2.31,0-4.19-1.88-4.19-4.19c0-2.31,1.88-4.19,4.19-4.19h50.44V92.27z"/>
+		<path class="st0" d="M21.81,88.08c0,2.31,1.88,4.19,4.19,4.19h6.13v-8.38H26C23.69,83.89,21.81,85.77,21.81,88.08"/>
+		<polygon class="st0" points="86.57,87.56 80.69,83.91 80.69,92.26 86.57,88.47 		"/>
+	</g>
+</g>
+</svg>

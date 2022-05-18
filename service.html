@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/animate.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Doson</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navigation" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/image/log.png" alt="" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="icofont-navigation-menu"></span> -->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
+                <div class="line"></div>
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="service.html">Dịch Vụ</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="news.html" id="dropdown05" data-toggle="dropdown"
+                                aria-haspopup="false" aria-expanded="true">Tin
+                                tức</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="news.html">Blog with Sidebar</a></li>
+
+                                <li><a class="dropdown-item" href="news.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="recruit.html">Tuyển dụng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+
+                        <li class="nav-item"><a class="btn__cta main-btn font-boild" href="contact.html">Đăng
+                                ký</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section-bannerService" class="section-bannerService">
+            <div class="container h-100 position-relative">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="wrapper-form" id="sign-up-form">
+                            <div class="form-service  shin fadeInLeft" data-wow-duration="1.5s">
+                                <span class="label-form">Nhận tư vấn marketing</span>
+                                <form id="contact-form" class="contact__form " method="post" action="mail.php">
+                                    <!-- form message -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="alert alert-success contact__msg" style="display: none"
+                                                role="alert">
+                                                Your message was sent successfully.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="name" id="name" type="text" class="form-control"
+                                                    placeholder="Họ và tên">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="email" id="email" type="email" class="form-control"
+                                                    placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input name="phone" id="phone" type="text" class="form-control"
+                                                    placeholder="Số điện thoại">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group-2 mb-4">
+                                        <input name="message" id="message" type="text" class="form-control"
+                                            placeholder="Lĩnh vực kinh doanh">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <input class="btn btn__form" name="submit" type="submit"
+                                            value="Đăng ký ngay"></input>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="wrapper-banner">
+                        <img src="./assets/image/service/DOSON_dichvuani1.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-mkt" class="section-mkt">
+            <div class="bg-video">
+                <video id="video" autoplay muted playsinline loop>
+                    <source src="./assets/image/service/DOSON_DichvuAni2.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="container">
+                <div class="wrapper-title-service">
+                    <div class="section-title">
+                        <div class="title">
+                            <h1 class="uppercase font-boild h2">Marketing</h1>
+                            <div class="divider "></div>
+                        </div>
+                        <span class="h2 font-boild uppercase">Tổng thể</span>
+                    </div>
+                    <p class="body-text">Tư vấn chiến lược và triển khai các giải pháp Marketing Online tổng thể cho
+                        doanh
+                        nghiệp. Tối ưu hóa hoạt động Digital Marketing, cải thiện doanh thu, quảng bá thương
+                        hiệu, xây dựng lộ trình Marketing hiệu quả.</p>
+                </div>
+            </div>
+            <div class="wrapper-main-service">
+
+                <div class="service service-1">
+                    <div class="row no-gutters">
+                        <div class="col-xl-6 col-lg-8 col-12">
+                            <div class="service-icon">
+                                <img src="./assets/image/service/DOSON_planet2.gif" class="object-cover" alt="">
+                            </div>
+                            <div class="service-info mt-lg-5 mt-md-4 mt-3">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="service-tag">
+                                            <span class="p1">TƯ VẤN
+                                                GIẢI PHÁP
+                                                DIGITAL
+                                                MARKETING</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-12">
+                                        <div class="body-text">Theo đó, đội ngũ nhân viên trẻ với bề dày kinh
+                                            nghiệm thực chiến cùng sự lắng nghe, thấu hiểu
+                                            khách hàng là một điểm mạnh của Doson Media.</div>
+                                        <div class="wrapper-btn">
+                                            <div class="btn-inline"> <a class="btn main-btn border"
+                                                    href="#sign-up-form">Đăng ký tư
+                                                    vấn</a></div>
+                                            <div class="btn-inline"><a class="btn main-btn" href="#">Tìm hiểu
+                                                    thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="minus-top">
+                    <div class="service service-2">
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 col-lg-4 col-12"></div>
+                            <div class="col-xl-6 col-lg-8 col-12">
+                                <div class="service-icon">
+                                    <img src="./assets/image/service/DOSON_planet.gif" class="object-cover" alt="">
+                                </div>
+                                <div class="service-info mt-lg-5 mt-md-4 mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12">
+                                            <div class="service-tag">
+                                                <span class="p1">TƯ VẤN
+                                                    GIẢI PHÁP
+                                                    DIGITAL
+                                                    MARKETING</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-12">
+                                            <div class="body-text">Theo đó, đội ngũ nhân viên trẻ với bề dày
+                                                kinh
+                                                nghiệm thực chiến cùng sự lắng nghe, thấu hiểu
+                                                khách hàng là một điểm mạnh của Doson Media.</div>
+                                            <div class="wrapper-btn">
+                                                <div class="btn-inline"> <a class="btn main-btn border"
+                                                        href="#sign-up-form">Đăng ký tư
+                                                        vấn</a></div>
+                                                <div class="btn-inline"><a class="btn main-btn" href="#">Tìm
+                                                        hiểu
+                                                        thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minus-top">
+                    <div class="service service-3 ">
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 col-lg-8 col-12">
+                                <div class="service-icon">
+                                    <img src="./assets/image/service/DOSON_planet.gif" class="object-cover" alt="">
+                                </div>
+                                <div class="service-info mt-lg-5 mt-md-4 mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12">
+                                            <div class="service-tag">
+                                                <span class="p1">TƯ VẤN
+                                                    GIẢI PHÁP
+                                                    DIGITAL
+                                                    MARKETING</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-12">
+                                            <div class="body-text">Theo đó, đội ngũ nhân viên trẻ với bề dày
+                                                kinh
+                                                nghiệm thực chiến cùng sự lắng nghe, thấu hiểu
+                                                khách hàng là một điểm mạnh của Doson Media.</div>
+                                            <div class="wrapper-btn">
+                                                <div class="btn-inline"> <a class="btn main-btn border"
+                                                        href="#sign-up-form">Đăng ký tư
+                                                        vấn</a></div>
+                                                <div class="btn-inline"><a class="btn main-btn" href="#">Tìm
+                                                        hiểu
+                                                        thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-digital" class="section-digital">
+            <div class="custom-shape-divider-top-1652350317">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="wrapper-title-service">
+                    <div class="section-title">
+                        <div class="title">
+                            <h1 class="uppercase font-boild h2">Digital</h1>
+                            <div class="divider "></div>
+                        </div>
+                        <span class="h2 font-boild uppercase">marketing</span>
+                    </div>
+                    <p class="body-text">Nhằm thúc đẩy khả năng tiếp cận khách hàng và tăng tỉ lệ bùng nổ doanh số,
+                        Digital Marketing là phương pháp hỗ trợ tối ưu trên đa nền tảng Online như
+                        Facebook, Google, Tik Tok, Youtube,...v.v</p>
+                </div>
+                <div class="wrapper-service">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">Thiết kế website</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s" data-wow-delay=".2s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">Chăm sóc, quản trị website</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s" data-wow-delay=".4s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">SEO</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s" data-wow-delay=".6s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">Thiết kế website</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s" data-wow-delay=".8s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">Chăm sóc, quản trị website</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="service-item shin fadeInUp " data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="service-icon">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                </div>
+                                <div class="line mx-auto"></div>
+                                <div class="service-title">
+                                    <h2 class=" h3">SEO</h2>
+                                </div>
+                                <div class="service-description">
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipi Lorem ipsum
+                                        dolor sit
+                                        amet, consectetuer adipiv</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1652411159">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+
+        </section>
+        <section id="section-reative" class="section-reative">
+            <div class="wrapper-title-service">
+                <div class="section-title">
+                    <div class="title">
+                        <h1 class="uppercase font-boild h2">Sáng tạo</h1>
+                        <div class="divider "></div>
+                    </div>
+                    <span class="h2 font-boild uppercase">nội dung</span>
+                </div>
+                <p class="body-text">Lan tỏa vị thế doanh nghiệp cũng như tăng cao độ nhận biết thương hiệu, việc
+                    Sáng Tạo Nội Dung góp phần thiết yếu xây dựng hình ảnh hiệu quả nhất cho các
+                    doanh nghiệp hiện nay.</p>
+            </div>
+            <div class="container">
+                <div class="wrapper-reative top shin fadeInRight" data-wow-duration="1.5s">
+                    <div class="reative-row">
+                        <div class="reative-img">
+                            <img src="./assets/image/service/SEC4_hinh1.png" alt="">
+                        </div>
+                        <div class="wapper-reative-content">
+                            <div class="reative-content">
+                                <div class="wrapper-content-title">
+                                    <div class="content-title">
+                                        <span class="sub-heading uppercase">THIẾT KẾ HÌNH ẢNH BỘ NHẬN DIỆN
+                                            THƯƠNG
+                                            HIỆU</span>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="content-description">
+                                    <p class="body-text">Bộ nhận diện thương hiệu chính là bộ mặt của doanh
+                                        nghiệp cũng
+                                        như khẳng định vị thế trên thị trường Việt. Tại Doson Media, chúng
+                                        tôi cân bằng các yếu tố ngân sách và yêu cầu mong muốn phát triển
+                                        hình ảnh của Quý Khách Hàng. Mang đến một Hệ Thống Nhận Diện
+                                        Thương Hiệu chuẩn Độc Đáo - Chuyên Nghiệp - Ấn Tượng.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="icon-reative">
+                        <div class="icon-img">
+                            <img src="https://via.placeholder.com/100" alt="">
+                        </div>
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+                </div>
+                <div class="wrapper-reative bottom shin fadeInLeft" data-wow-duration="1.5s">
+                    <div class="reative-row">
+                        <div class="reative-img">
+                            <img src="./assets/image/service/SEC4_hinh2.png" alt="">
+                        </div>
+                        <div class="wapper-reative-content">
+                            <div class="reative-content">
+                                <div class="wrapper-content-title">
+                                    <div class="content-title">
+                                        <span class="sub-heading uppercase">THIẾT KẾ HÌNH ẢNH BỘ NHẬN DIỆN
+                                            THƯƠNG
+                                            HIỆU</span>
+                                    </div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="content-description">
+                                    <p class="body-text">Bộ nhận diện thương hiệu chính là bộ mặt của doanh
+                                        nghiệp cũng
+                                        như khẳng định vị thế trên thị trường Việt. Tại Doson Media, chúng
+                                        tôi cân bằng các yếu tố ngân sách và yêu cầu mong muốn phát triển
+                                        hình ảnh của Quý Khách Hàng. Mang đến một Hệ Thống Nhận Diện
+                                        Thương Hiệu chuẩn Độc Đáo - Chuyên Nghiệp - Ấn Tượng.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="icon-reative">
+                        <div class="icon-img">
+                            <img src="https://via.placeholder.com/100" alt="">
+                        </div>
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="section-service-flow" class="section-service-flow">
+            <div class="custom-shape-divider-top-1652425003">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="wrapper-title-service">
+                <div class="section-title">
+                    <div class="title">
+                        <h1 class="uppercase font-boild h2">Quy trình</h1>
+                        <div class="divider "></div>
+                    </div>
+                    <span class="h2 font-boild uppercase">Dịch vụ</span>
+                </div>
+                <p class="body-text">Lan tỏa vị thế doanh nghiệp cũng như tăng cao độ nhận biết thương hiệu, việc
+                    Sáng Tạo Nội Dung góp phần thiết yếu xây dựng hình ảnh hiệu quả nhất cho các
+                    doanh nghiệp hiện nay.</p>
+            </div>
+            <div class="container">
+                <div class="wrapper-cards-flow">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-flow shin fadeInRight" data-wow-duration="1.5s">
+                                <div class="bg-card">
+                                    <img src="./assets/image/service/SEC5_table1.png" alt="">
+                                </div>
+                                <div class="card-step">
+                                    <span class="h2">Step<h2 class="h1 font-boild">01</h2></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-title">
+                                        <span class="title p1">Tiếp nhận thông tin</span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="info-description">
+                                        Lan tỏa vị thế doanh nghiệp
+                                        cũng như tăng cao độ nhận biết
+                                        thương hiệu, việc Sáng Tạo Nội
+                                        Dung góp phần thiết yếu xây
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-flow shin fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
+                                <div class="bg-card">
+                                    <img src="./assets/image/service/SEC5_table1.png" alt="">
+                                </div>
+                                <div class="card-step">
+                                    <span class="h2">Step<h2 class="h1 font-boild">02</h2></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-title">
+                                        <span class="title p1">Phân tích đề xuất
+                                            chiến lược</span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="info-description">
+                                        Lan tỏa vị thế doanh nghiệp
+                                        cũng như tăng cao độ nhận biết
+                                        thương hiệu, việc Sáng Tạo Nội
+                                        Dung góp phần thiết yếu xây
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-flow shin fadeInRight" data-wow-duration="1.5s" data-wow-delay="1s">
+                                <div class="bg-card">
+                                    <img src="./assets/image/service/SEC5_table1.png" alt="">
+                                </div>
+                                <div class="card-step">
+                                    <span class="h2">Step<h2 class="h1 font-boild">03</h2></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-title w-80">
+                                        <span class="title p1">Khách hàng duyệt
+                                            và xem xét</span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="info-description">
+                                        Lan tỏa vị thế doanh nghiệp
+                                        cũng như tăng cao độ nhận biết
+                                        thương hiệu, việc Sáng Tạo Nội
+                                        Dung góp phần thiết yếu xây
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div class="col-2"></div>
+                        <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card-flow shin fadeInRight" data-wow-duration="1.5s">
+                                <div class="bg-card">
+                                    <img src="./assets/image/service/SEC5_table1.png" alt="">
+                                </div>
+                                <div class="card-step">
+                                    <span class="h2">Step<h2 class="h1 font-boild">04</h2></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-title">
+                                        <span class="title p1">Lập kế hoạch
+                                            và triển khai</span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="info-description">
+                                        Lan tỏa vị thế doanh nghiệp
+                                        cũng như tăng cao độ nhận biết
+                                        thương hiệu, việc Sáng Tạo Nội
+                                        Dung góp phần thiết yếu xây
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card-flow shin fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
+                                <div class="bg-card">
+                                    <img src="./assets/image/service/SEC5_table2.png" alt="">
+                                </div>
+                                <div class="card-step">
+                                    <span class="h2">Step<h2 class="h1 font-boild">05</h2></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-title">
+                                        <span class="title p1">Đo lường, báo cáo
+                                            và tối ưu</span>
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="info-description">
+                                        Lan tỏa vị thế doanh nghiệp
+                                        cũng như tăng cao độ nhận biết
+                                        thương hiệu, việc Sáng Tạo Nội
+                                        Dung góp phần thiết yếu xây
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wrapper-cards-flow mobile">
+                <div class="card-flow">
+                    <div class="bg-card">
+                        <img src="./assets/image/service/SEC5_table1.png" alt="">
+                    </div>
+                    <div class="card-step">
+                        <span class="h2">Step<h2 class="h1 font-boild">01</h2></span>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            <span class="title p1">Tiếp nhận thông tin</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info-description">
+                            Lan tỏa vị thế doanh nghiệp
+                            cũng như tăng cao độ nhận biết
+                            thương hiệu, việc Sáng Tạo Nội
+                            Dung góp phần thiết yếu xây
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flow">
+                    <div class="bg-card">
+                        <img src="./assets/image/service/SEC5_table1.png" alt="">
+                    </div>
+                    <div class="card-step">
+                        <span class="h2">Step<h2 class="h1 font-boild">02</h2></span>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            <span class="title p1">Phân tích đề xuất
+                                chiến lược</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info-description">
+                            Lan tỏa vị thế doanh nghiệp
+                            cũng như tăng cao độ nhận biết
+                            thương hiệu, việc Sáng Tạo Nội
+                            Dung góp phần thiết yếu xây
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flow">
+                    <div class="bg-card">
+                        <img src="./assets/image/service/SEC5_table1.png" alt="">
+                    </div>
+                    <div class="card-step">
+                        <span class="h2">Step<h2 class="h1 font-boild">03</h2></span>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title w-80">
+                            <span class="title p1">Khách hàng duyệt
+                                và xem xét</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info-description">
+                            Lan tỏa vị thế doanh nghiệp
+                            cũng như tăng cao độ nhận biết
+                            thương hiệu, việc Sáng Tạo Nội
+                            Dung góp phần thiết yếu xây
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flow">
+                    <div class="bg-card">
+                        <img src="./assets/image/service/SEC5_table1.png" alt="">
+                    </div>
+                    <div class="card-step">
+                        <span class="h2">Step<h2 class="h1 font-boild">04</h2></span>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            <span class="title p1">Lập kế hoạch
+                                và triển khai</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info-description">
+                            Lan tỏa vị thế doanh nghiệp
+                            cũng như tăng cao độ nhận biết
+                            thương hiệu, việc Sáng Tạo Nội
+                            Dung góp phần thiết yếu xây
+                        </div>
+                    </div>
+                </div>
+                <div class="card-flow">
+                    <div class="bg-card">
+                        <img src="./assets/image/service/SEC5_table2.png" alt="">
+                    </div>
+                    <div class="card-step">
+                        <span class="h2">Step<h2 class="h1 font-boild">05</h2></span>
+                    </div>
+                    <div class="card-info">
+                        <div class="info-title">
+                            <span class="title p1">Đo lường, báo cáo
+                                và tối ưu</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info-description">
+                            Lan tỏa vị thế doanh nghiệp
+                            cũng như tăng cao độ nhận biết
+                            thương hiệu, việc Sáng Tạo Nội
+                            Dung góp phần thiết yếu xây
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="custom-shape-divider-top-1652196438">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 "></div>
+                <div class="col-md-8 col-12">
+                    <div class="footer-logo mb-4"><img src="./assets/image/log.png" alt=""> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mr-auto col-12">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="widget mb-md-5 mb-2 mb-lg-0 pr-md-5">
+                        <div class="divider mx-md-auto mb-4"></div>
+                        <ul class="list-unstyled footer-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="icofont-location-pin"></i>
+                                    <span> 20 Đường số 20, Khu dân cư Him Lam, Quận 7, Thành phố Hồ Chí Minh</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:091 177 93 33">
+                                    <i class="icofont-phone-circle"></i>
+                                    <span> 091 177 93 33</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto: @email@example.com" target="_blank">
+                                    <i class="icofont-email"></i>
+                                    <span>@email@example.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                    <h4 class="uppercase text-white font-semiboild mt-3">Đăng ký Email</h4>
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos
+                        laborum nesciunt
+                        tempore quisquam sit, cumque vero a error quis?</p>
+                    <div class="mt-4">
+                        <div class="subscribe-form text-lg-right mt-5 mt-lg-0">
+                            <form action="#" class="subscribe">
+                                <input type="text" class="form-control" placeholder="Your Email address">
+                                <a href="#" class="btn main-btn btn-round-full">Subscribe</a>
+                            </form>
+                        </div>
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/doson"><i
+                                        class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/doson"><i
+                                        class="icofont-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.pinterest.com/doson/"><i
+                                        class="icofont-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.pinterest.com/doson/"><i
+                                        class="icofont-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-btm py-4 mt-md-5 mt-2">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12">
+                    <div class="copyright">
+                        &copy; Copyright Reserved to <span class="text-color">Doson</span> by <a
+                            href="https://themefisher.com/" target="_blank">Shin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <a class="backtop js-scroll-trigger" href="#top">
+                        <i class="icofont-scroll-long-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="./slick/slick.min.js"></script> -->
+
+<script src="./assets/counter/jquery.counterup.min.js"></script>
+<script src="./assets/counter/jquery.waypoints.min.js"></script>
+<script src="wow.min.js"></script>
+<script src="script.js"></script>
+<!-- <script src="animation.js"></script> -->
+<script src="scroll.js"></script>
+
+
+</html>

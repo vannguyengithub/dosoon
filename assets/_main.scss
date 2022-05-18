@@ -1,0 +1,371 @@
+html {
+  scroll-behavior: smooth;
+}
+body.fixed {
+  overflow: hidden;
+}
+main {
+  padding-top: 30px;
+  @include tablet {
+    padding-top: 45px;
+  }
+  @include desktop {
+    padding-top: 100px;
+  }
+}
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-title {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 991px) {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  //   h2 {
+  //     color: $title-color;
+  //   }
+}
+.wrapper-title-service {
+  .section-title {
+    display: flex;
+    span {
+      margin-left: 20px;
+      display: inline-block;
+      color: $white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background: $color-red-300;
+      margin-top: 20px;
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 400px;
+      .divider {
+        background: $color-red-400;
+        height: 4px;
+      }
+      h1 {
+        color: $color-red-400;
+      }
+    }
+  }
+}
+.wrapper-title-service {
+  max-width: 90%;
+  @include tablet {
+    max-width: 80%;
+  }
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  .section-title {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+}
+
+//title
+.wrapper-title {
+  .section-title {
+    display: flex;
+    span {
+      margin-left: 0px;
+      display: inline-block;
+      color: $white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background: $color-red-300;
+      margin-top: 20px;
+      @include tablet {
+        margin-left: 20px;
+        margin-top: 0;
+      }
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      .divider {
+        background: $color-red-400;
+        height: 4px;
+      }
+      h1 {
+        color: $color-red-400;
+      }
+    }
+  }
+}
+.wrapper-title {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  @include tablet {
+    max-width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+}
+.slick-dots {
+  bottom: -40px !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: $color-gray-400 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: $color-red-400 !important;
+}
+
+.slick-next,
+.slick-prev {
+  border-radius: 100% !important;
+  background: $color-gray-300 !important;
+  color: $black;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-family: "icofont" !important;
+}
+.slick-prev:before {
+  content: "\ea9d" !important;
+}
+.slick-next:before {
+  content: "\eaa0" !important;
+}
+.divider {
+  width: 100px;
+  height: 5px;
+  background: $white;
+}
+
+//card
+.card-blog {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .blog-thumb {
+    border-radius: 15px;
+    @include desktop {
+      border-radius: 30px;
+    }
+
+    overflow: hidden;
+    // max-width: 300px;
+    // max-height: 300px;
+    margin-bottom: 20px;
+    img {
+      @include transition(all);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .blog-title {
+    a {
+      color: $black;
+      @include transition(all);
+      p {
+        @include limit-row(3);
+      }
+    }
+    &:hover {
+      a {
+        color: $color-red-400;
+      }
+    }
+  }
+  &:hover {
+    .blog-thumb {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.card-news-hot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include transition;
+  &:hover {
+    .news-image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .news-title {
+      a {
+        color: $color-red-400;
+      }
+    }
+  }
+  .news-image {
+    border-radius: 15px;
+    @include desktop {
+      border-radius: 30px;
+    }
+    overflow: hidden;
+    max-height: 525px;
+    img {
+      @include transition;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .news-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $black;
+    a {
+      @include limit-row(3);
+      &:hover {
+        color: $color-red-400;
+      }
+      @include transition;
+      color: $color-gray-600;
+    }
+  }
+  .news-description {
+    padding-top: 10px;
+    p {
+      @include limit-row(3);
+    }
+  }
+}
+.card-news {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include transition;
+  &:hover {
+    .news-image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .news-title {
+      a {
+        color: $color-red-400;
+      }
+    }
+  }
+  .news-image {
+    @include desktop {
+      border-radius: 30px;
+    }
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 250px;
+    img {
+      @include transition;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .news-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    a {
+      @include limit-row(3);
+      &:hover {
+        color: $color-red-400;
+      }
+      @include transition;
+      color: $color-gray-600;
+    }
+  }
+}
+
+.card-news-horizontal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 20px;
+  @include transition;
+  &:hover {
+    .news-image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .news-title {
+      a {
+        color: $color-red-400;
+      }
+    }
+  }
+  .news-image {
+    @include desktop {
+      border-radius: 15px;
+    }
+    @include desktop {
+      border-radius: 30px;
+    }
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 250px;
+    img {
+      @include transition;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .news-title {
+    padding-bottom: 10px;
+
+    a {
+      @include limit-row(3);
+      &:hover {
+        color: $color-red-400;
+      }
+      @include transition;
+      color: $color-gray-600;
+    }
+  }
+  .news-description {
+    p {
+      @include limit-row(3);
+    }
+  }
+}

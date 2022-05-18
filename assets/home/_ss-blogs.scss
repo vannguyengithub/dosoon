@@ -1,0 +1,44 @@
+#section-blogs {
+  padding-bottom: 75px;
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+  @include desktop {
+    padding-bottom: 150px;
+  }
+  .wrapper-title-banner {
+    text-align: center;
+    h1 {
+      color: $color-red-400;
+    }
+    .divider {
+      background: $color-red-400;
+    }
+  }
+  .wrapper-blogs {
+    .card-blog {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    @include transition;
+    &:hover {
+      background: $color-red-400 !important;
+    }
+  }
+  .slick-prev {
+    left: -50px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px !important;
+  }
+}

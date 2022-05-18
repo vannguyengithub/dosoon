@@ -1,0 +1,78 @@
+#section-value {
+  position: relative;
+  background: $color-red-200;
+  padding-bottom: 100px;
+  @include desktop {
+    padding-bottom: 175px;
+  }
+  .image-right {
+    video {
+      width: 100%;
+    }
+  }
+  .wrapper-title-banner {
+    .section-title {
+      h1 {
+        color: $color-red-400;
+      }
+      .divider {
+        background: $color-red-400;
+      }
+      p {
+        color: $color-brown-300;
+      }
+    }
+  }
+  .value-block {
+    background: $white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background: $white;
+    @include transition;
+    @include tablet {
+      width: 180px;
+      height: 180px;
+    }
+    border: 4px solid $color-red-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .image-right {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .custom-shape-divider-bottom-1652176518 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652176518 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+    @include tablet {
+      height: 105px;
+    }
+    @include desktop {
+      height: 150px;
+    }
+  }
+
+  .custom-shape-divider-bottom-1652176518 .shape-fill {
+    fill: #ffffff;
+  }
+}

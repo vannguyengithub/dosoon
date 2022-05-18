@@ -1,0 +1,44 @@
+//should wrapper page news inside tag main with id= page-news
+#page-news {
+  .wrapper-tite {
+  }
+  .section-news-1 {
+    padding-top: 25px;
+    @include tablet {
+      padding-top: 30px;
+    }
+    margin-bottom: 20px;
+
+    .card-news-horizontal {
+      // margin-top: 20px;
+      &:last-child {
+        .row {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    .line {
+      height: 1px;
+      width: 100%;
+      margin: 20px 0px;
+      background-color: $color-gray-500;
+    }
+  }
+  //code card bar right news
+  .wrapper-bar {
+    padding: 20px;
+    border-radius: 15px;
+    @include desktop {
+      border-radius: 30px;
+    }
+
+    background-color: $color-gray-200;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .card-news-hot .news-title {
+      border: none;
+    }
+  }
+}
